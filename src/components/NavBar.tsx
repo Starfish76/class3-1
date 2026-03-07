@@ -1,0 +1,63 @@
+import { Camera, Images, LayoutGrid, MessageCircleHeart, Star, Timer } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
+
+const links = [
+  { to: '/', label: '홈', icon: Camera },
+  { to: '/albums', label: '앨범', icon: Images },
+  { to: '/timeline', label: '타임라인', icon: Timer },
+  { to: '/messages', label: '한마디', icon: MessageCircleHeart },
+  { to: '/best-moments', label: '베스트', icon: Star },
+]
+
+export function NavBar() {
+  return (
+    <header className="sticky top-0 z-40 border-b border-white/50 bg-[rgba(255,252,249,0.75)] backdrop-blur-xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+        <NavLink to="/" className="flex items-center gap-3 text-slate-900">
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-rose-400 to-orange-300 text-white shadow-lg shadow-rose-200/70">
+            <LayoutGrid className="h-5 w-5" />
+          </div>
+          <div>
+            <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Yearbook Archive</p>
+            <p className="text-lg font-semibold">3-1반 추억 홈페이지</p>
+          </div>
+        </NavLink>
+
+        <nav className="hidden items-center gap-2 md:flex">
+          {links.map(({ to, label, icon: Icon }) => (
+            <NavLink
+              key={to}
+              to={to}
+              className={({ isActive }) =>
+                `inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition ${
+                  isActive
+                    ? 'bg-rose-500 text-white shadow-lg shadow-rose-200/80'
+                    : 'text-slate-600 hover:bg-white hover:text-slate-900'
+                }`
+              }
+            >
+              <Icon className="h-4 w-4" />
+              {label}
+            </NavLink>
+          ))}
+        </nav>
+      </div>
+
+      <nav className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 pb-4 md:hidden sm:px-6 lg:px-8">
+        {links.map(({ to, label }) => (
+          <NavLink
+            key={to}
+            to={to}
+            className={({ isActive }) =>
+              `rounded-full px-4 py-2 text-sm font-medium whitespace-nowrap transition ${
+                isActive ? 'bg-rose-500 text-white shadow-md shadow-rose-200/70' : 'bg-white/80 text-slate-600'
+              }`
+            }
+          >
+            {label}
+          </NavLink>
+        ))}
+      </nav>
+    </header>
+  )
+}
