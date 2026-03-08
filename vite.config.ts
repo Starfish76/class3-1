@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/Class3-1/",
+  base: "/class3-1/",
 })
