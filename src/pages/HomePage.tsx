@@ -27,7 +27,7 @@ export function HomePage() {
             매일 지나가던 교실, 소란스럽던 체육대회, 밤까지 반짝이던 축제, 여행지의 공기까지. 3-1반의 한 해를 사진과 짧은 문장으로 다시 꺼내볼 수 있는 공간입니다.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link to="/albums" className="inline-flex items-center gap-2 rounded-full bg-sky-600 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-sky-200/80 transition hover:bg-sky-700">
+            <Link to="/albums" className="inline-flex items-center gap-2 rounded-full bg-sky-500 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-sky-200/80 transition hover:bg-sky-600">
               앨범 바로 보기
               <ArrowRight className="h-4 w-4" />
             </Link>

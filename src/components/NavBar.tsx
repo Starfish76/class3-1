@@ -16,7 +16,7 @@ export function NavBar() {
     <header className="sticky top-0 z-40 border-b border-white/35 bg-[linear-gradient(180deg,rgba(223,238,255,0.96)_0%,rgba(237,246,255,0.92)_58%,rgba(247,251,255,0.84)_100%)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <NavLink to="/" className="flex items-center gap-3 text-slate-900">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 to-blue-600 text-white shadow-lg shadow-sky-200/70">
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 to-blue-500 text-white shadow-lg shadow-sky-200/70">
             <LayoutGrid className="h-5 w-5" />
           </div>
           <div>
@@ -33,7 +33,7 @@ export function NavBar() {
               className={({ isActive }) =>
                 `inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition ${
                   isActive
-                    ? 'bg-sky-600 text-white shadow-lg shadow-sky-200/80'
+                    ? 'bg-sky-500 text-white shadow-lg shadow-sky-200/80'
                     : 'text-slate-600 hover:bg-white hover:text-slate-900'
                 }`
               }
@@ -52,7 +52,7 @@ export function NavBar() {
             to={to}
             className={({ isActive }) =>
               `rounded-full px-4 py-2 text-sm font-medium whitespace-nowrap transition ${
-                isActive ? 'bg-sky-600 text-white shadow-md shadow-sky-200/70' : 'bg-white/80 text-slate-600'
+                isActive ? 'bg-sky-500 text-white shadow-md shadow-sky-200/70' : 'bg-white/80 text-slate-600'
               }`
             }
           >

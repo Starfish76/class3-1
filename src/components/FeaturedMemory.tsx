@@ -19,7 +19,7 @@ export function FeaturedMemory() {
         <p className="mt-5 text-base leading-8 text-slate-600">{featuredMemory.description}</p>
         <Link
           to="/albums/school-trip"
-          className="mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-sky-600 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-sky-200/80 transition hover:bg-sky-700"
+          className="mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-sky-500 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-sky-200/80 transition hover:bg-sky-600"
         >
           수학여행 앨범 보기
           <ArrowRight className="h-4 w-4" />
