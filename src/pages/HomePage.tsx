@@ -16,7 +16,7 @@ export function HomePage() {
     <div className="space-y-16">
       <section className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          <div className="inline-flex items-center gap-2 rounded-full border border-rose-200 bg-white/90 px-4 py-2 text-sm font-medium text-rose-500">
+          <div className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/90 px-4 py-2 text-sm font-medium text-sky-600">
             <Sparkles className="h-4 w-4" />
             우리 반의 순간을 모아둔 디지털 아카이브
           </div>
@@ -27,7 +27,7 @@ export function HomePage() {
             매일 지나가던 교실, 소란스럽던 체육대회, 밤까지 반짝이던 축제, 여행지의 공기까지. 3-1반의 한 해를 사진과 짧은 문장으로 다시 꺼내볼 수 있는 공간입니다.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link to="/albums" className="inline-flex items-center gap-2 rounded-full bg-rose-500 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-rose-200/80 transition hover:bg-rose-600">
+            <Link to="/albums" className="inline-flex items-center gap-2 rounded-full bg-sky-600 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-sky-200/80 transition hover:bg-sky-700">
               앨범 바로 보기
               <ArrowRight className="h-4 w-4" />
             </Link>
@@ -38,7 +38,7 @@ export function HomePage() {
         </motion.div>
 
         <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.08 }} className="grid grid-cols-2 gap-4">
-          <img src={albums[0].photos[0].src} alt={albums[0].photos[0].alt} className="h-60 w-full rounded-[1.75rem] object-cover shadow-lg shadow-rose-100/70 md:h-72" />
+          <img src={albums[0].photos[0].src} alt={albums[0].photos[0].alt} className="h-60 w-full rounded-[1.75rem] object-cover shadow-lg shadow-sky-100/70 md:h-72" />
           <img src={albums[1].photos[0].src} alt={albums[1].photos[0].alt} className="mt-8 h-60 w-full rounded-[1.75rem] object-cover shadow-lg shadow-orange-100/70 md:h-80" />
           <img src={albums[2].photos[0].src} alt={albums[2].photos[0].alt} className="h-44 w-full rounded-[1.75rem] object-cover shadow-lg shadow-sky-100/70 md:h-56" />
           <img src={albums[4].photos[0].src} alt={albums[4].photos[0].alt} className="mt-[-2rem] h-48 w-full rounded-[1.75rem] object-cover shadow-lg shadow-emerald-100/70 md:h-64" />
@@ -64,7 +64,7 @@ export function HomePage() {
         <div className="grid gap-4 lg:grid-cols-3">
           {quickLinks.map(({ to, title, description, icon: Icon }) => (
             <Link key={to} to={to} className="group rounded-[1.75rem] border border-white/70 bg-white/90 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(15,23,42,0.12)]">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-rose-300 to-orange-200 text-slate-900">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-200 to-blue-300 text-slate-900">
                 <Icon className="h-5 w-5" />
               </div>
               <h3 className="mt-5 text-xl font-semibold text-slate-900">{title}</h3>

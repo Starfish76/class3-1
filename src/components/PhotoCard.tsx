@@ -24,7 +24,7 @@ export function PhotoCard({ photo, onClick }: PhotoCardProps) {
         <div className="flex items-center justify-between gap-3">
           <p className="font-medium text-slate-900">{photo.caption}</p>
           {photo.tag ? (
-            <span className="rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-500">
+            <span className="rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-700">
               {photo.tag}
             </span>
           ) : null}

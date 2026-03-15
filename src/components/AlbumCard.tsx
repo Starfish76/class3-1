@@ -22,7 +22,7 @@ export function AlbumCard({ album }: AlbumCardProps) {
       </div>
       <div className="space-y-4 p-6">
         <div className="space-y-2">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-rose-500">Memory Album</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">Memory Album</p>
           <h3 className="text-2xl font-semibold text-slate-900">{album.title}</h3>
           <p className="text-sm leading-7 text-slate-600">{album.description}</p>
         </div>

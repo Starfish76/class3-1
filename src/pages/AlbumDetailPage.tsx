@@ -33,14 +33,14 @@ export function AlbumDetailPage() {
         <div className="rounded-[1.5rem] border border-white/70 bg-white/90 p-5 shadow-[0_16px_50px_rgba(15,23,42,0.06)]">
           <p className="text-sm text-slate-500">촬영일</p>
           <p className="mt-2 inline-flex items-center gap-2 text-lg font-semibold text-slate-900">
-            <CalendarDays className="h-5 w-5 text-rose-500" />
+            <CalendarDays className="h-5 w-5 text-sky-600" />
             {album.date}
           </p>
         </div>
         <div className="rounded-[1.5rem] border border-white/70 bg-white/90 p-5 shadow-[0_16px_50px_rgba(15,23,42,0.06)]">
           <p className="text-sm text-slate-500">장소</p>
           <p className="mt-2 inline-flex items-center gap-2 text-lg font-semibold text-slate-900">
-            <MapPin className="h-5 w-5 text-rose-500" />
+            <MapPin className="h-5 w-5 text-sky-600" />
             {album.location}
           </p>
         </div>

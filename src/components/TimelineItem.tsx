@@ -8,7 +8,7 @@ export function TimelineItem({ item }: TimelineItemProps) {
   return (
     <article className="grid gap-4 rounded-[1.75rem] border border-white/70 bg-white/90 p-4 shadow-[0_18px_60px_rgba(15,23,42,0.08)] md:grid-cols-[140px_minmax(0,1fr)] md:p-5">
       <div className="flex items-start">
-        <span className="inline-flex rounded-full bg-rose-50 px-4 py-2 text-sm font-semibold text-rose-500">
+        <span className="inline-flex rounded-full bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-700">
           {item.month}
         </span>
       </div>

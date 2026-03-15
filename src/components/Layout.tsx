@@ -6,11 +6,11 @@ export function Layout() {
   const location = useLocation()
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(251,191,188,0.35),_transparent_35%),linear-gradient(180deg,_#fffaf5_0%,_#fffdfb_36%,_#f8fbff_100%)]">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(125,211,252,0.28),_transparent_35%),linear-gradient(180deg,_#f2f8ff_0%,_#f8fbff_36%,_#eef6ff_100%)]">
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div className="absolute -left-12 top-24 h-44 w-44 rounded-full bg-rose-200/35 blur-3xl" />
-        <div className="absolute right-0 top-72 h-64 w-64 rounded-full bg-sky-200/30 blur-3xl" />
-        <div className="absolute bottom-0 left-1/3 h-56 w-56 rounded-full bg-amber-200/25 blur-3xl" />
+        <div className="absolute -left-12 top-24 h-44 w-44 rounded-full bg-sky-200/35 blur-3xl" />
+        <div className="absolute right-0 top-72 h-64 w-64 rounded-full bg-blue-200/30 blur-3xl" />
+        <div className="absolute bottom-0 left-1/3 h-56 w-56 rounded-full bg-cyan-200/25 blur-3xl" />
       </div>
 
       <NavBar />

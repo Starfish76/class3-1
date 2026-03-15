@@ -27,7 +27,7 @@ export const albums: Album[] = [
     coverImage:
       'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80',
     location: '학교 운동장',
-    accent: 'from-rose-300 via-orange-200 to-amber-100',
+    accent: 'from-sky-300 via-cyan-200 to-blue-100',
     photos: [
       photo('sports-1', 'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80', '체육대회 단체 응원', '반티를 맞춰 입고 첫 경기 전에 남긴 단체 사진.', 1200, 900, { featured: true, tag: '올해의 단체사진' }),
       photo('sports-2', 'https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=900&q=80', '응원도구를 든 학생들', '응원 연습보다 실전이 더 완벽했던 순간.', 900, 1200),
@@ -43,7 +43,7 @@ export const albums: Album[] = [
     coverImage:
       'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=1200&q=80',
     location: '학교 강당 · 운동장',
-    accent: 'from-fuchsia-300 via-pink-200 to-rose-100',
+    accent: 'from-blue-300 via-sky-200 to-cyan-100',
     photos: [
       photo('festival-1', 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=1200&q=80', '무대 조명 아래 공연', '리허설 때보다 훨씬 더 멋졌던 본무대.', 1200, 850, { featured: true }),
       photo('festival-2', 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80', '무대 뒤 대기', '공연 직전 긴장된 표정과 장난치는 모습이 같이 담겼다.', 900, 1200, { tag: '감동 사진' }),
