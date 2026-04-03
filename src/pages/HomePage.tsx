@@ -2,22 +2,23 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-const heroBackground = '/photos/firstClassPhoto/ClassPhoto.jpg'
+const classPhoto = `${import.meta.env.BASE_URL}photos/firstClassPhoto/ClassPhoto.jpg`
+const heroBackground = classPhoto
 const samplePhotos = [
   {
-    src: '/photos/firstClassPhoto/ClassPhoto.jpg',
+    src: classPhoto,
     alt: '첫 단체 사진 예시',
-    className: 'left-4 top-0 w-[14rem] -rotate-[10deg] sm:w-[17rem] lg:left-6 lg:top-0 lg:w-[17rem]',
+    className: 'right-6 top-0 w-[15rem] -rotate-[10deg] sm:w-[18rem] lg:right-6 lg:top-0 lg:w-[18rem]',
   },
   {
     src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80',
     alt: '풍경 사진 예시',
-    className: 'left-10 top-52 w-[15rem] rotate-[11deg] sm:w-[18rem] lg:left-10 lg:top-52 lg:w-[18rem]',
+    className: 'left-2 top-52 w-[15rem] rotate-[11deg] sm:w-[18rem] lg:left-2 lg:top-52 lg:w-[18rem]',
   },
   {
     src: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80',
     alt: '축제 사진 예시',
-    className: 'right-0 top-28 w-[11rem] rotate-[2deg] sm:w-[13rem] lg:right-0 lg:top-24 lg:w-[13rem]',
+    className: 'right-0 top-26 w-[12rem] rotate-[2deg] sm:w-[14rem] lg:right-0 lg:top-24 lg:w-[14rem]',
   },
 ]
 
@@ -44,7 +45,7 @@ export function HomePage() {
         transition={{ duration: 0.6 }}
         className="relative z-10 mx-auto w-full max-w-7xl"
       >
-        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_24rem] xl:grid-cols-[minmax(0,1fr)_28rem]">
+        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_26rem] xl:grid-cols-[minmax(0,1fr)_30rem]">
           <div className="max-w-3xl rounded-[2.25rem] border border-white/60 bg-white/55 p-7 shadow-[0_28px_90px_rgba(15,23,42,0.18)] backdrop-blur-md sm:p-10 lg:p-12">
             <div className="inline-flex items-center gap-2 rounded-full border border-sky-200/80 bg-white/78 px-4 py-2 text-sm font-medium text-sky-700">
               <Sparkles className="h-4 w-4" />
@@ -77,7 +78,7 @@ export function HomePage() {
             </div>
           </div>
 
-          <div className="relative hidden h-[28rem] w-[24rem] justify-self-end lg:block xl:w-[28rem]">
+          <div className="relative hidden h-[28rem] w-[26rem] justify-self-end lg:block xl:w-[30rem]">
             {samplePhotos.map((photo) => (
               <div
                 key={photo.alt}
