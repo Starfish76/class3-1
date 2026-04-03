@@ -83,7 +83,7 @@ export function HomePage() {
             {samplePhotos.map((photo) => (
               <div
                 key={photo.alt}
-                className={`absolute overflow-hidden rounded-[0.35rem] border-[5px] border-slate-950 bg-white shadow-[0_22px_50px_rgba(15,23,42,0.22)] ${photo.className}`}
+                className={`absolute overflow-hidden rounded-[0.35rem] shadow-[0_22px_50px_rgba(15,23,42,0.22)] ${photo.className}`}
               >
                 <img src={photo.src} alt={photo.alt} className="aspect-[4/3] h-full w-full object-cover" />
               </div>
