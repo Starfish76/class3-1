@@ -1,4 +1,4 @@
-import { Camera, Images, LayoutGrid, MessageCircleHeart, Trophy } from 'lucide-react'
+import { Camera, Images, LayoutGrid, MessageCircleHeart, Star, Trophy } from 'lucide-react'
 import { NavLink, useLocation } from 'react-router-dom'
 
 const links = [
@@ -6,6 +6,7 @@ const links = [
   { to: '/albums', label: '앨범', icon: Images },
   { to: '/guinness-book', label: '표네스북', icon: Trophy },
   { to: '/messages', label: '메시지', icon: MessageCircleHeart },
+  { to: '/best-moments', label: '베스트 순간', icon: Star },
 ]
 
 export function NavBar() {
