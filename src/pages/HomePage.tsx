@@ -6,12 +6,12 @@ const samplePhotos = [
   {
     src: `${import.meta.env.BASE_URL}photos/firstClassPhoto/ClassPhoto.jpg`,
     alt: '첫 단체 사진 예시',
-    className: 'right-10 top-0 w-[15rem] -rotate-[10deg] sm:w-[17rem] xl:right-12 xl:w-[18rem]',
+    className: 'right-5 top-0 w-[15rem] -rotate-[10deg] sm:w-[17rem] xl:right-12 xl:w-[18rem]',
   },
   {
     src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80',
     alt: '풍경 사진 예시',
-    className: 'left-4 top-50 w-[15rem] rotate-[11deg] sm:w-[18rem] xl:left-6 xl:top-54 xl:w-[19rem]',
+    className: 'left-4 top-30 w-[15rem] rotate-[11deg] sm:w-[18rem] xl:left-6 xl:top-54 xl:w-[19rem]',
   },
   {
     src: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80',
