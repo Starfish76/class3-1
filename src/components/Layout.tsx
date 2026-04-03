@@ -8,7 +8,7 @@ export function Layout() {
 
   return (
     <div
-      className={`min-h-screen bg-[radial-gradient(circle_at_top,_rgba(125,211,252,0.28),_transparent_35%),linear-gradient(180deg,_#f2f8ff_0%,_#f8fbff_36%,_#eef6ff_100%)] ${
+      className={`flex min-h-dvh flex-col bg-[radial-gradient(circle_at_top,_rgba(125,211,252,0.28),_transparent_35%),linear-gradient(180deg,_#f2f8ff_0%,_#f8fbff_36%,_#eef6ff_100%)] ${
         isHomePage ? 'overflow-hidden' : ''
       }`}
     >
@@ -22,7 +22,7 @@ export function Layout() {
       <main
         key={location.pathname}
         className={`relative ${
-          isHomePage ? 'mx-auto max-w-none px-0 py-0' : 'mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'
+          isHomePage ? 'flex-1 mx-auto flex w-full max-w-none px-0 py-0' : 'mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'
         }`}
       >
         <Outlet />

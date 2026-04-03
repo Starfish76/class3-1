@@ -1,5 +1,5 @@
 import { CalendarDays, Camera, Images, LayoutGrid, MessageCircleHeart, Star, Timer, Trophy } from 'lucide-react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 const links = [
   { to: '/', label: '홈', icon: Camera },
@@ -12,8 +12,15 @@ const links = [
 ]
 
 export function NavBar() {
+  const location = useLocation()
+  const isHomePath = location.pathname === '/'
+
   return (
-    <header className="sticky top-0 z-40 border-b border-white/35 bg-[linear-gradient(180deg,rgba(223,238,255,0.96)_0%,rgba(237,246,255,0.92)_58%,rgba(247,251,255,0.84)_100%)] backdrop-blur-xl">
+    <header
+      className={`sticky top-0 z-40 bg-[linear-gradient(180deg,rgba(223,238,255,0.96)_0%,rgba(237,246,255,0.92)_58%,rgba(247,251,255,0.84)_100%)] backdrop-blur-xl ${
+        isHomePath ? '' : 'border-b border-white/35'
+      }`}
+    >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <NavLink to="/" className="flex items-center gap-3 text-slate-900">
           <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 to-blue-500 text-white shadow-lg shadow-sky-200/70">
