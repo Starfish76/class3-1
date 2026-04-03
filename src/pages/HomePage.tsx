@@ -6,7 +6,7 @@ const samplePhotos = [
   {
     src: `${import.meta.env.BASE_URL}photos/firstClassPhoto/ClassPhoto.jpg`,
     alt: '첫 단체 사진 예시',
-    className: 'right-5 top-0 w-[15rem] -rotate-[10deg] sm:w-[17rem] xl:right-12 xl:w-[18rem]',
+    className: 'right-15 top-0 w-[15rem] -rotate-[10deg] sm:w-[17rem] xl:right-12 xl:w-[18rem]',
   },
   {
     src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80',
@@ -36,7 +36,7 @@ export function HomePage() {
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="relative z-10 mx-auto w-full max-w-[88rem] lg:-mt-4 xl:-mt-10"
+        className="relative z-10 mx-auto w-full max-w-[88rem] lg:-mt-15 xl:-mt-10"
       >
         <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_34rem] xl:grid-cols-[minmax(0,1fr)_38rem]">
           <div className="max-w-3xl rounded-[2.25rem] border border-white/60 bg-white/55 p-7 shadow-[0_28px_90px_rgba(15,23,42,0.18)] backdrop-blur-md sm:p-10 lg:p-12">
