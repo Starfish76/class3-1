@@ -36,7 +36,7 @@ export function HomePage() {
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="relative z-10 mx-auto w-full max-w-[88rem] lg:-mt-8 xl:-mt-10"
+        className="relative z-10 mx-auto w-full max-w-[88rem] lg:-mt-4 xl:-mt-10"
       >
         <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_34rem] xl:grid-cols-[minmax(0,1fr)_38rem]">
           <div className="max-w-3xl rounded-[2.25rem] border border-white/60 bg-white/55 p-7 shadow-[0_28px_90px_rgba(15,23,42,0.18)] backdrop-blur-md sm:p-10 lg:p-12">
