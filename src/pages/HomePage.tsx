@@ -7,17 +7,17 @@ const samplePhotos = [
   {
     src: '/photos/firstClassPhoto/ClassPhoto.jpg',
     alt: '첫 단체 사진 예시',
-    className: 'left-6 top-4 w-[15rem] -rotate-[12deg] sm:w-[18rem] lg:left-10 lg:top-0 lg:w-[18rem]',
+    className: 'left-4 top-0 w-[14rem] -rotate-[10deg] sm:w-[17rem] lg:left-6 lg:top-0 lg:w-[17rem]',
   },
   {
     src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80',
     alt: '풍경 사진 예시',
-    className: 'left-10 top-36 w-[16rem] rotate-[13deg] sm:w-[19rem] lg:left-16 lg:top-44 lg:w-[19rem]',
+    className: 'left-10 top-52 w-[15rem] rotate-[11deg] sm:w-[18rem] lg:left-10 lg:top-52 lg:w-[18rem]',
   },
   {
     src: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80',
     alt: '축제 사진 예시',
-    className: 'right-1 top-22 w-[10rem] rotate-0 sm:w-[12rem] lg:right-4 lg:top-28 lg:w-[12rem]',
+    className: 'right-0 top-28 w-[11rem] rotate-[2deg] sm:w-[13rem] lg:right-0 lg:top-24 lg:w-[13rem]',
   },
 ]
 
@@ -52,14 +52,12 @@ export function HomePage() {
             </div>
 
             <h1 className="mt-6 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-7xl">
-              <span className="inline bg-pink-100/65 px-2 py-1">3-1반 추억 홈페이지</span>
+              3-1반 추억 홈페이지
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-slate-700 sm:text-lg sm:leading-9">
-              <span className="inline bg-pink-100/55 px-1 py-1">
-                매일 지나가던 교실, 소란스럽던 체육대회, 밤까지 반짝이던 축제, 여행지의 공기까지. 3-1반의 한 해를
-                사진과 짧은 문장으로 다시 꺼내볼 수 있는 공간입니다.
-              </span>
+              매일 지나가던 교실, 소란스럽던 체육대회, 밤까지 반짝이던 축제, 여행지의 공기까지. 3-1반의 한 해를
+              사진과 짧은 문장으로 다시 꺼내볼 수 있는 공간입니다.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">

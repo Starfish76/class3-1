@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
 @import "tailwindcss";
 
-@theme {
-  --font-sans: "Noto Sans KR", sans-serif;
-  --font-display: "Playfair Display", "Noto Sans KR", serif;
-}
-
 :root {
   color: #0f172a;
   font-family: "Noto Sans KR", sans-serif;
@@ -45,5 +40,6 @@ img {
 }
 
 ::selection {
-  background: rgba(251, 113, 133, 0.18);
+  background: rgba(56, 189, 248, 0.28);
+  color: #082f49;
 }
