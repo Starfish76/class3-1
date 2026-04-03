@@ -1,14 +1,11 @@
-import { CalendarDays, Camera, Images, LayoutGrid, MessageCircleHeart, Star, Timer, Trophy } from 'lucide-react'
+import { Camera, Images, LayoutGrid, MessageCircleHeart, Trophy } from 'lucide-react'
 import { NavLink, useLocation } from 'react-router-dom'
 
 const links = [
   { to: '/', label: '홈', icon: Camera },
   { to: '/albums', label: '앨범', icon: Images },
-  { to: '/timeline', label: '타임라인', icon: Timer },
-  { to: '/messages', label: '메시지', icon: MessageCircleHeart },
-  { to: '/best-moments', label: '베스트', icon: Star },
   { to: '/guinness-book', label: '표네스북', icon: Trophy },
-  { to: '/school-calendar', label: '학사일정', icon: CalendarDays },
+  { to: '/messages', label: '메시지', icon: MessageCircleHeart },
 ]
 
 export function NavBar() {
