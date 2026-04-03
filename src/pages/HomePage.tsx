@@ -44,7 +44,7 @@ export function HomePage() {
         transition={{ duration: 0.6 }}
         className="relative z-10 mx-auto w-full max-w-7xl"
       >
-        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(360px,0.8fr)]">
+        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_24rem] xl:grid-cols-[minmax(0,1fr)_28rem]">
           <div className="max-w-3xl rounded-[2.25rem] border border-white/60 bg-white/55 p-7 shadow-[0_28px_90px_rgba(15,23,42,0.18)] backdrop-blur-md sm:p-10 lg:p-12">
             <div className="inline-flex items-center gap-2 rounded-full border border-sky-200/80 bg-white/78 px-4 py-2 text-sm font-medium text-sky-700">
               <Sparkles className="h-4 w-4" />
@@ -77,7 +77,7 @@ export function HomePage() {
             </div>
           </div>
 
-          <div className="relative hidden h-[28rem] lg:block">
+          <div className="relative hidden h-[28rem] w-[24rem] justify-self-end lg:block xl:w-[28rem]">
             {samplePhotos.map((photo) => (
               <div
                 key={photo.alt}
