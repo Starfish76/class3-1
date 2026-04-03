@@ -2,23 +2,21 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-const classPhoto = `${import.meta.env.BASE_URL}photos/firstClassPhoto/ClassPhoto.jpg`
-const heroBackground = classPhoto
 const samplePhotos = [
   {
-    src: classPhoto,
+    src: `${import.meta.env.BASE_URL}photos/firstClassPhoto/ClassPhoto.jpg`,
     alt: '첫 단체 사진 예시',
-    className: 'right-6 top-0 w-[15rem] -rotate-[10deg] sm:w-[18rem] lg:right-6 lg:top-0 lg:w-[18rem]',
+    className: 'right-10 top-0 w-[15rem] -rotate-[10deg] sm:w-[18rem] xl:right-12 xl:w-[19rem]',
   },
   {
     src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80',
     alt: '풍경 사진 예시',
-    className: 'left-2 top-52 w-[15rem] rotate-[11deg] sm:w-[18rem] lg:left-2 lg:top-52 lg:w-[18rem]',
+    className: 'left-4 top-56 w-[16rem] rotate-[11deg] sm:w-[19rem] xl:left-6 xl:top-60 xl:w-[20rem]',
   },
   {
     src: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80',
     alt: '축제 사진 예시',
-    className: 'right-0 top-26 w-[12rem] rotate-[2deg] sm:w-[14rem] lg:right-0 lg:top-24 lg:w-[14rem]',
+    className: 'right-0 top-28 w-[12rem] rotate-[2deg] sm:w-[14rem] xl:top-26 xl:w-[15rem]',
   },
 ]
 
@@ -26,16 +24,11 @@ export function HomePage() {
   return (
     <section className="relative isolate flex min-h-full items-center overflow-hidden px-4 py-8 sm:px-6 lg:px-8">
       <div
-        className="absolute inset-0 scale-105 bg-cover bg-center bg-no-repeat blur-[6px]"
-        style={{ backgroundImage: `url(${heroBackground})` }}
+        className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(125,211,252,0.34),transparent_22%),radial-gradient(circle_at_bottom_left,rgba(59,130,246,0.22),transparent_28%),linear-gradient(135deg,rgba(240,247,255,0.98)_0%,rgba(226,240,255,0.95)_38%,rgba(199,229,255,0.92)_72%,rgba(180,221,255,0.9)_100%)]"
         aria-hidden="true"
       />
       <div
-        className="absolute inset-0 bg-[linear-gradient(110deg,rgba(241,247,255,0.94)_0%,rgba(241,247,255,0.8)_38%,rgba(226,238,255,0.46)_62%,rgba(212,228,247,0.3)_100%)]"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.2),transparent_26%),radial-gradient(circle_at_bottom_left,rgba(56,189,248,0.16),transparent_28%)]"
+        className="absolute inset-0 bg-[radial-gradient(circle_at_18%_22%,rgba(255,255,255,0.75),transparent_26%),radial-gradient(circle_at_82%_20%,rgba(191,219,254,0.42),transparent_24%),radial-gradient(circle_at_72%_78%,rgba(125,211,252,0.24),transparent_26%)]"
         aria-hidden="true"
       />
 
@@ -43,9 +36,9 @@ export function HomePage() {
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="relative z-10 mx-auto w-full max-w-7xl"
+        className="relative z-10 mx-auto w-full max-w-[88rem]"
       >
-        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_26rem] xl:grid-cols-[minmax(0,1fr)_30rem]">
+        <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_34rem] xl:grid-cols-[minmax(0,1fr)_38rem]">
           <div className="max-w-3xl rounded-[2.25rem] border border-white/60 bg-white/55 p-7 shadow-[0_28px_90px_rgba(15,23,42,0.18)] backdrop-blur-md sm:p-10 lg:p-12">
             <div className="inline-flex items-center gap-2 rounded-full border border-sky-200/80 bg-white/78 px-4 py-2 text-sm font-medium text-sky-700">
               <Sparkles className="h-4 w-4" />
@@ -78,7 +71,7 @@ export function HomePage() {
             </div>
           </div>
 
-          <div className="relative hidden h-[28rem] w-[26rem] justify-self-end lg:block xl:w-[30rem]">
+          <div className="relative hidden h-[32rem] w-[34rem] justify-self-end lg:block xl:h-[34rem] xl:w-[38rem]">
             {samplePhotos.map((photo) => (
               <div
                 key={photo.alt}
