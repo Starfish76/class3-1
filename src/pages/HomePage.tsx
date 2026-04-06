@@ -6,7 +6,7 @@ const samplePhotos = [
   {
     src: `${import.meta.env.BASE_URL}photos/firstClassPhoto/ClassPhoto.jpg`,
     alt: '첫 단체 사진 예시',
-    className: 'right-8 top-3 w-[15rem] -rotate-[10deg] sm:w-[17rem] xl:right-16 xl:w-[18rem]',
+    className: 'right-8 top-3 w-[15rem] -translate-x-[3cm] -rotate-[10deg] sm:w-[17rem] xl:right-16 xl:w-[18rem]',
   },
   {
     src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80',
