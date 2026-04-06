@@ -1,10 +1,10 @@
-import { CalendarDays, ChevronLeft, MapPin } from 'lucide-react'
+import { ChevronLeft } from 'lucide-react'
 import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { Lightbox } from '../components/Lightbox'
 import { PageHero } from '../components/PageHero'
 import { PhotoCard } from '../components/PhotoCard'
-import { albums } from '../data/memories'
+import { albums } from '../data/albums'
 import { formatPhotoCount } from '../utils/format'
 
 export function AlbumDetailPage() {
@@ -27,30 +27,13 @@ export function AlbumDetailPage() {
         앨범 목록으로
       </Link>
 
-      <PageHero label={album.location} title={album.title} description={album.description} />
+      <PageHero
+        label="Album"
+        title={album.title}
+        description={`${formatPhotoCount(album.photos.length)}만 보이도록 정리한 앨범입니다.`}
+      />
 
-      <section className="grid gap-4 md:grid-cols-3">
-        <div className="rounded-[1.5rem] border border-white/70 bg-white/90 p-5 shadow-[0_16px_50px_rgba(15,23,42,0.06)]">
-          <p className="text-sm text-slate-500">촬영일</p>
-          <p className="mt-2 inline-flex items-center gap-2 text-lg font-semibold text-slate-900">
-            <CalendarDays className="h-5 w-5 text-sky-600" />
-            {album.date}
-          </p>
-        </div>
-        <div className="rounded-[1.5rem] border border-white/70 bg-white/90 p-5 shadow-[0_16px_50px_rgba(15,23,42,0.06)]">
-          <p className="text-sm text-slate-500">장소</p>
-          <p className="mt-2 inline-flex items-center gap-2 text-lg font-semibold text-slate-900">
-            <MapPin className="h-5 w-5 text-sky-600" />
-            {album.location}
-          </p>
-        </div>
-        <div className="rounded-[1.5rem] border border-white/70 bg-white/90 p-5 shadow-[0_16px_50px_rgba(15,23,42,0.06)]">
-          <p className="text-sm text-slate-500">사진 수</p>
-          <p className="mt-2 text-lg font-semibold text-slate-900">{formatPhotoCount(album.photos.length)}</p>
-        </div>
-      </section>
-
-      <section className="columns-1 gap-5 sm:columns-2 xl:columns-3">
+      <section className="columns-1 gap-6 sm:columns-2 xl:columns-3 2xl:columns-4">
         {album.photos.map((photo, index) => (
           <PhotoCard key={photo.id} photo={photo} onClick={() => openPhoto(index)} />
         ))}

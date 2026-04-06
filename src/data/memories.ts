@@ -36,6 +36,26 @@ export const albums: Album[] = [
     ],
   },
   {
+    id: 'cherry-blossom',
+    title: '벚꽃 앨범',
+    date: '2025.04.08',
+    description: '봄 햇살 아래에서 남긴 사진들을 모아 둔 앨범. 새 학기 공기와 벚꽃이 같이 남아 있다.',
+    coverImage: './photos/firstClassPhoto/ClassPhoto.jpg',
+    location: '학교 앞 벚꽃길',
+    accent: 'from-pink-200 via-rose-100 to-sky-100',
+    photos: [
+      photo(
+        'blossom-1',
+        './photos/firstClassPhoto/ClassPhoto.jpg',
+        '벚꽃 아래 첫 단체 사진',
+        '벚꽃이 한창일 때 남긴 우리 반 첫 단체 사진.',
+        1200,
+        900,
+        { featured: true, tag: '봄 기록' },
+      ),
+    ],
+  },
+  {
     id: 'festival',
     title: '축제',
     date: '2025.09.12',
