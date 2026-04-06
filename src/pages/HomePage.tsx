@@ -16,7 +16,7 @@ const samplePhotos = [
   {
     src: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80',
     alt: '축제 사진 예시',
-    className: 'right-0 top-24 w-[12rem] -translate-y-[2cm] -rotate-[2deg] sm:w-[13rem] xl:top-22 xl:w-[14rem]',
+    className: 'right-0 top-24 w-[12rem] -translate-y-[-3cm] -rotate-[2deg] sm:w-[13rem] xl:top-22 xl:w-[14rem]',
   },
 ]
 
